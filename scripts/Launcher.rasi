@@ -19,7 +19,7 @@ coNFiguration {
 //----- Global Properties -----//
 
 * {
-font: "Terminess NF Mono Bold 10";
+font : "JetBrainsMono NF Bold 9";
 background: #1D1F28;
 background-alt: #1D1F28E0;
 foreground: #c0caf5;
