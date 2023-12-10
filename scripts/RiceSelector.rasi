@@ -1,3 +1,5 @@
+// # z0mbi3 -  https://github.com/gh0stzk/dotfiles
+
 // Config //
 configuration {
     modi:                        "drun";
@@ -5,9 +7,9 @@ configuration {
     drun-display-format:         "{name}";
     font:                        "JetBrainsMono NF Bold 11";
 
-	//hover-select:				true;
-	//me-select-entry:			"";
-	//me-accept-entry:			"MousePrimary";
+    //hover-select:				 true;
+	//me-select-entry:			 "";
+	//me-accept-entry:			 "MousePrimary";
 }
 
 * {
@@ -17,7 +19,8 @@ select-bg: #7560d3;
 select-fg: #14171c;
 }
 
-/*****----- Main Window -----*****/
+
+// Main //
 window {
     enabled:                     true;
     fullscreen:                  false;
@@ -36,6 +39,7 @@ mainbox {
     children:                    [ "listview" ];
     background-color:            @main-bg;
 }
+
 
 // Lists //
 listview {
@@ -56,7 +60,8 @@ listview {
     text-color:                  @main-fg;
 }
 
-/*****----- Elements -----*****/
+
+// Elements //
 element {
     enabled:                     true;
     orientation:                 horizontal;
@@ -76,7 +81,6 @@ element selected.normal {
     background-color:            @select-bg;
     text-color:                  @select-fg;
 }
-
 element-icon {
     size:                        33%;
     cursor:                      inherit;
@@ -84,7 +88,6 @@ element-icon {
     background-color:            transparent;
     text-color:                  inherit;
 }
-
 element-text {
     vertical-align:              0.5;
     horizontal-align:            0.5;
