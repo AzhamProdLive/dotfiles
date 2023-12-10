@@ -119,10 +119,18 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#49495a;/' \
 		-e 's/\(selected: \).*/\1#ee6388;/' \
 		-e 's/[^/]*-rofi/al-rofi/'
+
+# WallSelect menu colors
+	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
+		-e 's/\(main-bg: \).*/\1#f4f5f8E6;/' \
+		-e 's/\(main-fg: \).*/\1#49495a;/' \
+		-e 's/\(select-bg: \).*/\1#ee6388;/' \
+		-e 's/\(select-fg: \).*/\1#f4f5f8;/'
+
 }
 
-# Launch the bar
 
+# Launch the bar
 launch_bars() {
 
 	for mon in $(polybar --list-monitors | cut -d":" -f1); do
