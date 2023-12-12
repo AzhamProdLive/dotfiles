@@ -17,6 +17,7 @@ Editor,OpenApps --editor,/usr/share/icons/Papirus/32x32/apps/standard-notes.svg
 Firefox,OpenApps --browser,firefox
 Steam, steam, steam
 Discord, discord, discord
+Spotify, spotify, spotify
 
 ^tag(wg)
 User Card,OpenApps --usercard,/usr/share/icons/Papirus/32x32/apps/system-users.svg
