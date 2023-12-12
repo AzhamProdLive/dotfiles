@@ -16,7 +16,6 @@ BSPWM,^checkout(wm),/usr/share/icons/Papirus/32x32/apps/gnome-windows.svg
 Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 
 ^tag(favorites)
-Firefox,OpenApps --browser,firefox
 Spotify, spotify, spotify
 Auto-Cpufreq, auto-cpufreq-gtk, /usr/share/icons/Papirus/32x32/apps/indicator-cpufreq.svg
 Bluetooth, blueman-manager, /usr/share/icons/Papirus/32x32/apps/blueman.svg
