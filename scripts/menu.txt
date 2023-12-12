@@ -1,5 +1,5 @@
 Terminal,OpenApps --floating,/usr/share/icons/Papirus/32x32/apps/terminal.svg
-Web Browser,OpenApps --browser,/usr/share/icons/Papirus/32x32/apps/internet-web-browser.svg
+Firefox,OpenApps --browser, firefox
 File Manager,OpenApps --filemanager,/usr/share/icons/Papirus/32x32/apps/org.xfce.thunar.svg
 
 ^sep()
