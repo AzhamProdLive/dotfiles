@@ -9,6 +9,7 @@ Editors, ^checkout(editors), /usr/share/icons/Papirus/32x32/apps/standard-notes.
 Games, ^checkout(games), /usr/share/icons/Papirus/32x32/apps/sc-controller.svg
 Socials, ^checkout(socials), /usr/share/icons/Papirus/32x32/apps/org.gnome.Social.svg
 VMs, ^checkout(vms), /usr/share/icons/Papirus/32x32/apps/virt-manager.svg
+
 ^sep()
 
 Widgets,^checkout(wg),/usr/share/icons/Papirus/32x32/apps/kmenuedit.svg
@@ -16,51 +17,51 @@ BSPWM,^checkout(wm),/usr/share/icons/Papirus/32x32/apps/gnome-windows.svg
 Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 
 ^tag(favorites)
-Spotify, spotify, spotify
-Auto-Cpufreq, auto-cpufreq-gtk, /usr/share/icons/Papirus/32x32/apps/indicator-cpufreq.svg
-Bluetooth, blueman-manager, /usr/share/icons/Papirus/32x32/apps/blueman.svg
-Notion, notion-app, /usr/share/icons/Papirus/32x32/apps/notion.svg
-Qbittorrent, qbittorrent, /usr/share/icons/Papirus/32x32/apps/qbittorrent.svg
-RustDesk, rustdesk, /usr/share/icons/Papirus/32x32/apps/rustdesk.svg
+    Spotify, spotify, spotify
+    Auto-Cpufreq, auto-cpufreq-gtk, /usr/share/icons/Papirus/32x32/apps/indicator-cpufreq.svg
+    Bluetooth, blueman-manager, /usr/share/icons/Papirus/32x32/apps/blueman.svg
+    Notion, notion-app, /usr/share/icons/Papirus/32x32/apps/notion.svg
+    Qbittorrent, qbittorrent, /usr/share/icons/Papirus/32x32/apps/qbittorrent.svg
+    RustDesk, rustdesk, /usr/share/icons/Papirus/32x32/apps/rustdesk.svg
 
 ^tag(editors)
-Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
-IntelliJ Idea,OpenApps --editor, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
-DataGrip, ~/.local/share/JetBrains/Toolbox/apps/datagrip-2/bin/datagrip.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.DataGrip.svg
-PyCharm, ~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.PyCharm-Professional.svg
+    Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
+    IntelliJ Idea,OpenApps --editor, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
+    DataGrip, ~/.local/share/JetBrains/Toolbox/apps/datagrip-2/bin/datagrip.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.DataGrip.svg
+    PyCharm, ~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.PyCharm-Professional.svg
 
 ^tag(games)
-Steam, steam, steam
-Heroic Games Launcher, heroic, /usr/share/icons/Papirus/32x32/apps/heroic.svg
-Lutris, lutris, /usr/share/icons/Papirus/32x32/apps/lutris.svg
-Osu!, gamemoderun osu-wine --devserver ripple.moe, /usr/share/icons/Papirus/32x32/apps/osu.svg
-Minecraft, gamemoderun legacylauncher, /usr/share/icons/Papirus/32x32/apps/minecraft.svg
-League of Legends, gamemoderun leagueoflegends start, /usr/share/icons/Papirus/32x32/apps/league-of-legends.svg
-Tetr.io, gamemoderun tetrio-plus-bin, /usr/share/icons/Papirus/32x32/apps/tetrio-desktop.svg
+    Steam, steam, steam
+    Heroic Games Launcher, heroic, /usr/share/icons/Papirus/32x32/apps/heroic.svg
+    Lutris, lutris, /usr/share/icons/Papirus/32x32/apps/lutris.svg
+    Osu!, gamemoderun osu-wine --devserver ripple.moe, /usr/share/icons/Papirus/32x32/apps/osu.svg
+    Minecraft, gamemoderun legacylauncher, /usr/share/icons/Papirus/32x32/apps/minecraft.svg
+    League of Legends, gamemoderun leagueoflegends start, /usr/share/icons/Papirus/32x32/apps/league-of-legends.svg
+    Tetr.io, gamemoderun tetrio-plus-bin, /usr/share/icons/Papirus/32x32/apps/tetrio-desktop.svg
 
 ^tag(socials)
-Discord, discord, discord
-Discord screenaudio, discord-screenaudio, discord
-Armcord, armcord, armcord
-Element, element-desktop, /usr/share/icons/Papirus/32x32/apps/element-desktop.svg
+    Discord, discord, discord
+    Discord screenaudio, discord-screenaudio, discord
+    Armcord, armcord, armcord
+    Element, element-desktop, /usr/share/icons/Papirus/32x32/apps/element-desktop.svg
 
 ^tag(vms)
-VMware Workstation, vmware, /usr/share/icons/Papirus/32x32/apps/vmware-workstation.svg
-VMware Workstation Player, vmplayer, /usr/share/icons/Papirus/32x32/apps/vmware-player.svg
+    VMware Workstation, vmware, /usr/share/icons/Papirus/32x32/apps/vmware-workstation.svg
+    VMware Workstation Player, vmplayer, /usr/share/icons/Papirus/32x32/apps/vmware-player.svg
 
 ^tag(wg)
-User Card,OpenApps --usercard,/usr/share/icons/Papirus/32x32/apps/system-users.svg
-Music Player,OpenApps --player,/usr/share/icons/Papirus/32x32/apps/musique.svg
-Power Menu,OpenApps --powermenu,/usr/share/icons/Papirus/32x32/status/changes-allow.svg
-Calendar,OpenApps --calendar,/usr/share/icons/Papirus/32x32/apps/office-calendar.svg
+    User Card,OpenApps --usercard,/usr/share/icons/Papirus/32x32/apps/system-users.svg
+    Music Player,OpenApps --player,/usr/share/icons/Papirus/32x32/apps/musique.svg
+    Power Menu,OpenApps --powermenu,/usr/share/icons/Papirus/32x32/status/changes-allow.svg
+    Calendar,OpenApps --calendar,/usr/share/icons/Papirus/32x32/apps/office-calendar.svg
 
 ^tag(wm)
-Change Theme,OpenApps --rice,/usr/share/icons/Papirus/32x32/apps/colors.svg
-Keybinds,KeybindingsHelp,/usr/share/icons/Papirus/32x32/apps/preferences-desktop-keyboard-shortcuts.svg
-Restart WM,bspc wm -r,/usr/share/icons/Papirus/32x32/apps/system-reboot.svg
-Quit,bspc quit,/usr/share/icons/Papirus/32x32/apps/system-log-out.svg
+    Change Theme,OpenApps --rice,/usr/share/icons/Papirus/32x32/apps/colors.svg
+    Keybinds,KeybindingsHelp,/usr/share/icons/Papirus/32x32/apps/preferences-desktop-keyboard-shortcuts.svg
+    Restart WM,bspc wm -r,/usr/share/icons/Papirus/32x32/apps/system-reboot.svg
+    Quit,bspc quit,/usr/share/icons/Papirus/32x32/apps/system-log-out.svg
 
 ^tag(exit)
-Block computer,physlock -d,/usr/share/icons/Papirus/32x32/status/changes-prevent.svg
-Reboot,systemctl reboot,/usr/share/icons/Papirus/32x32/apps/system-reboot.svg
-Shutdown,systemctl poweroff,/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
+    Block computer,physlock -d,/usr/share/icons/Papirus/32x32/status/changes-prevent.svg
+    Reboot,systemctl reboot,/usr/share/icons/Papirus/32x32/apps/system-reboot.svg
+    Shutdown,systemctl poweroff,/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
