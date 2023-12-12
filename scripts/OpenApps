@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#   █████╗ ██████╗ ██████╗ ███████╗    ██╗      █████╗ ██╗   ██╗███╗   ██╗ ██████╗██╗  ██╗███████╗██████╗ 
+#   █████╗ ██████╗ ██████╗ ███████╗    ██╗      █████╗ ██╗   ██╗███╗   ██╗ ██████╗██╗  ██╗███████╗██████╗
 #  ██╔══██╗██╔══██╗██╔══██╗██╔════╝    ██║     ██╔══██╗██║   ██║████╗  ██║██╔════╝██║  ██║██╔════╝██╔══██╗
 #  ███████║██████╔╝██████╔╝███████╗    ██║     ███████║██║   ██║██╔██╗ ██║██║     ███████║█████╗  ██████╔╝
 #  ██╔══██║██╔═══╝ ██╔═══╝ ╚════██║    ██║     ██╔══██║██║   ██║██║╚██╗██║██║     ██╔══██║██╔══╝  ██╔══██╗
@@ -14,7 +14,7 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 	case "$1" in
 		--menu)
 			rofi -show drun -theme $HOME/.config/bspwm/scripts/Launcher.rasi
-			;; 
+			;;
 		--rice)
 			RiceSelector
 			;;
@@ -51,7 +51,7 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--editor)
 			~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh
 			;;
-		--telegram)
+	  --telegram)
 			telegram-desktop
 			;;
 		--whats)

@@ -5,6 +5,7 @@ File Manager,OpenApps --filemanager,/usr/share/icons/Papirus/32x32/apps/org.xfce
 ^sep()
 
 Favorites,^checkout(favorites),/usr/share/icons/Papirus/32x32/status/starred.svg
+Editors, ^checkout(editors), /usr/share/icons/Papirus/32x32/apps/standard-notes.svg
 
 ^sep()
 
@@ -13,11 +14,16 @@ BSPWM,^checkout(wm),/usr/share/icons/Papirus/32x32/apps/gnome-windows.svg
 Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 
 ^tag(favorites)
-Editor,OpenApps --editor,/usr/share/icons/Papirus/32x32/apps/standard-notes.svg
 Firefox,OpenApps --browser,firefox
 Steam, steam, steam
 Discord, discord, discord
 Spotify, spotify, spotify
+
+^tag(editors)
+Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
+IntelliJ Idea,OpenApps --editor, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
+DataGrip, ~/.local/share/JetBrains/Toolbox/apps/datagrip-2/bin/datagrip.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.DataGrip.svg
+PyCharm, ~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.PyCharm-Professional.svg
 
 ^tag(wg)
 User Card,OpenApps --usercard,/usr/share/icons/Papirus/32x32/apps/system-users.svg
