@@ -1,7 +1,7 @@
 #  ███████╗██╗  ██╗██╗  ██╗██╗  ██╗██████╗ ██████╗  ██████╗
 #  ██╔════╝╚██╗██╔╝██║  ██║██║ ██╔╝██╔══██╗██╔══██╗██╔════╝
-#  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║     
-#  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║     
+#  ███████╗ ╚███╔╝ ███████║█████╔╝ ██║  ██║██████╔╝██║
+#  ╚════██║ ██╔██╗ ██╔══██║██╔═██╗ ██║  ██║██╔══██╗██║
 #  ███████║██╔╝ ██╗██║  ██║██║  ██╗██████╔╝██║  ██║╚██████╗
 #  ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝ ╚═════╝
 #	z0mbi3			https://github.com/gh0stzk/dotfiles
@@ -74,14 +74,6 @@ Print
 ctrl + Print
 	ScreenShoTer --sel
 
-# Screenshot in 10s
-alt + Print
-	ScreenShoTer --in10
-
-# Screenshot active window
-shift + Print
-	ScreenShoTer --active
-
 # Manage brightness
 XF86MonBrightness{Up,Down}
     sh Brightness {up,down}
@@ -89,10 +81,6 @@ XF86MonBrightness{Up,Down}
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume,Mute}
 	Volume{ --inc, --dec, --toggle}
-
-# Music Control
-XF86Audio{Next,Prev,Play,Stop}
-	MediaControl {--next,--previous,--toggle,--stop}
 
 
 #|||----- Bspwm hotkeys -----|||#
@@ -104,7 +92,7 @@ super + alt + r
 # close and kill
 super + {_,shift + }q
 	bspc node -{c,k}
-	
+
 # Reload Keybindings
 super + Escape
 	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/bspwm/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
@@ -116,30 +104,14 @@ super + m
 	bspc desktop -l next
 
 # set the window state
-super + {t,shift + t,s,f}
+super + {t,shift + t}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-
-# set the node flags
-ctrl + alt {m,x,s,p}
-	bspc node -g {marked,locked,sticky,private}
 
 # Hide/Unhide Window
 ctrl + alt + h
 	BspHideNode
 
 #####
-
-# rotate desktop
-super + r
-	bspc node @/ --rotate {90,-90}
-
-# Circulate the leaves of the tree
-super + c
-	bspc node @/ --circulate {backward,forward}
-
-# Change focus of the Node or Swap Nodes
-super + {_,shift + }{Left,Down,Up,Right}
-	bspc node -{f,s} {west,south,north,east}
 
 # Switch workspace
 super + ctrl + {Left,Right}
@@ -152,7 +124,7 @@ super + {grave,Tab}
 # focus or send to the given desktop
 super + ctrl + {1-9,0}
 	bspc {node -d} '^{1-9,10}' '--follow'
-	
+
 # Send focused Node to workspace directionally
 super + ctrl + shift + {Left,Right}
 	bspc node -d {prev,next} '--follow'
@@ -172,7 +144,7 @@ super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 #####
-	
+
 # expand a window
 super + alt + {Left,Down,Up,Right}
 	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
