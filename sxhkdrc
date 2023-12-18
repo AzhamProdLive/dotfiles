@@ -113,17 +113,13 @@ ctrl + alt + h
 
 #####
 
-# Switch workspace
+# Switch workspaces
 super + ctrl + {Left,Right}
 	bspc desktop -f {prev,next}.local
 
-# focus the last node/desktop
+# Quick Switch between the last 2 workspaces(
 super + {grave,Tab}
 	bspc {node,desktop} -f last
-
-# focus or send to the given desktop
-super + ctrl + {1-9,0}
-	bspc {node -d} '^{1-9,10}' '--follow'
 
 # Send focused Node to workspace directionally
 super + ctrl + shift + {Left,Right}
@@ -131,28 +127,6 @@ super + ctrl + shift + {Left,Right}
 
 #####
 
-# preselect the direction
-super + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
-
-# cancel the preselection for the focused node
-super + ctrl + space
-	bspc node -p cancel
-
-# cancel the preselection for the focused desktop
-super + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
-#####
-
-# expand a window
-super + alt + {Left,Down,Up,Right}
-	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
-
 # contract a window
 super + alt + shift + {Left,Down,Up,Right}
 	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
-
-# move a floating window
-alt + shift {Left,Down,Up,Right}
-	bspc node -v {-10 0,0 10,0 -10,10 0}
