@@ -110,7 +110,7 @@
          (label :class "launcher-pfp-label"
 				:xalign 0.5
 				:limit-width 30
-				:text "Love you sunlight <3")))
+				:text "Placeholder")))
 
 (defwidget infoarch []
           (box :orientation "h"
