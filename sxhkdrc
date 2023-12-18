@@ -17,7 +17,7 @@ super + Return
 super + alt + Return
 	OpenApps --floating
 
-# Menu aplicaciones
+# Application Menu
 super + @space
 	OpenApps --menu
 
