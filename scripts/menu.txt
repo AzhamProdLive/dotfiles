@@ -22,6 +22,8 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Bluetooth, blueman-manager, /usr/share/icons/Papirus/32x32/apps/blueman.svg
     Qbittorrent, qbittorrent, /usr/share/icons/Papirus/32x32/apps/qbittorrent.svg
     RustDesk, rustdesk, /usr/share/icons/Papirus/32x32/apps/rustdesk.svg
+    KdenLive, kdenlive, /usr/share/icons/Papirus/32x32/apps/org.kde.kdenlive.svg
+    Octopi, octopi, /usr/share/icons/Papirus/32x32/apps/octopi.svg
 
 ^tag(editors)
     Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
@@ -43,6 +45,7 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Discord screenaudio, discord-screenaudio, discord
     Armcord, armcord, armcord
     Element, element-desktop, /usr/share/icons/Papirus/32x32/apps/element-desktop.svg
+    Guilded, guilded, /usr/share/icons/Papirus/32x32/apps/guilded.svg
 
 ^tag(vms)
     VMware Workstation, vmware, /usr/share/icons/Papirus/32x32/apps/vmware-workstation.svg
