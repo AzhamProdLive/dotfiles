@@ -23,7 +23,7 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Qbittorrent, qbittorrent, /usr/share/icons/Papirus/32x32/apps/qbittorrent.svg
     RustDesk, rustdesk, /usr/share/icons/Papirus/32x32/apps/rustdesk.svg
     KdenLive, kdenlive, /usr/share/icons/Papirus/32x32/apps/org.kde.kdenlive.svg
-    Octopi, octopi, /usr/share/icons/Papirus/32x32/apps/octopi.svg
+    Octopi, /usr/bin/octopi, /usr/share/icons/Papirus/32x32/apps/octopi.svg
 
 ^tag(editors)
     Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
