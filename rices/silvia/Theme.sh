@@ -25,12 +25,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Gruvbox) Color scheme for Silvia Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *silvia_gruvbox/"
+# Default colors
+[colors.primary]
+background = "#282828"
+foreground = "#fbf1c7"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#fbf1c7"
+text = "#282828"
+
+# Normal colors
+[colors.normal]
+black = "#a89984"
+blue = "#458588"
+cyan = "#689d6a"
+green = "#98971a"
+magenta = "#b16286"
+red = "#cc241d"
+white = "#ebdbb2"
+yellow = "#d79921"
+
+# Bright colors
+[colors.bright]
+black = "#a89984"
+blue = "#83a598"
+cyan = "#8ec07c"
+green = "#b8bb26"
+magenta = "#d3869b"
+red = "#fb4934"
+white = "#ebdbb2"
+yellow = "#fabd2f"
+EOF
 }
 
 # Set compositor configuration
@@ -61,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#d3869b\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#d3869b'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -119,15 +148,14 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#fbf1c7;/' \
 		-e 's/\(selected: \).*/\1#d79921;/' \
 		-e 's/[^/]*-rofi/si-rofi/'
-
-	# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#282828E6;/' \
 		-e 's/\(main-fg: \).*/\1#fbf1c7;/' \
 		-e 's/\(select-bg: \).*/\1#d79921;/' \
 		-e 's/\(select-fg: \).*/\1#282828;/'
 }
-
 
 # Launch the bar
 launch_bars() {

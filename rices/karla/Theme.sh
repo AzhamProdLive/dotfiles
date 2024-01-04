@@ -25,12 +25,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Zombie-Night) Color scheme for Karla Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *karla_z0mbi3_night/"
+# Default colors
+[colors.primary]
+background = "#0E1113"
+foreground = "#afb1db"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#8656e3"
+text = "#0b0b12"
+
+# Normal colors
+[colors.normal]
+black = "#2d2b36"
+blue = "#5884d4"
+cyan = "#7df0f0"
+green = "#61b33e"
+magenta = "#7a44e3"
+red = "#e7034a"
+white = "#faf7ff"
+yellow = "#ffb964"
+
+# Bright colors
+[colors.bright]
+black = "#373542"
+blue = "#5f90ea"
+cyan = "#97f0f0"
+green = "#6fb352"
+magenta = "#8656e3"
+red = "#e71c5b"
+white = "#fdfcff"
+yellow = "#ffb964"
+EOF
 }
 
 # Set compositor configuration
@@ -61,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#353c52\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#7a44e3'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -119,15 +148,14 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#afb1db;/' \
 		-e 's/\(selected: \).*/\1#3d7fea;/' \
 		-e 's/[^/]*-rofi/ka-rofi/'
-
-	# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#0E1113F7;/' \
 		-e 's/\(main-fg: \).*/\1#afb1db;/' \
 		-e 's/\(select-bg: \).*/\1#3d7fea;/' \
 		-e 's/\(select-fg: \).*/\1#0E1113;/'
 }
-
 
 # Launch the bar
 launch_bars() {

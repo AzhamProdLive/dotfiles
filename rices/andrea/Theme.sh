@@ -27,12 +27,41 @@ pidof -q bspc && pkill -9 bspc > /dev/null
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# Color scheme for Andrea Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *andrea_color_scheme/"
+# Default colors
+[colors.primary]
+background = "#FDF0ED"
+foreground = "#151515"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#b0a5ed"
+text = "#ededed"
+
+# Normal colors
+[colors.normal]
+black = "#151515"
+blue = "#65C7E3"
+cyan = "#2eccca"
+green = "#1EB980"
+magenta = "#b0a5ed"
+red = "#DA103F"
+white = "#ededed"
+yellow = "#FFCC57"
+
+# Bright colors
+[colors.bright]
+black = "#666666"
+blue = "#3FC6DE"
+cyan = "#1EAEAE"
+green = "#07DA8C"
+magenta = "#F075B7"
+red = "#F43E5C"
+white = "#16161C"
+yellow = "#F77D26"
+EOF
 }
 
 # Set compositor configuration
@@ -53,7 +82,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#605692\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#605692'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -102,7 +131,6 @@ set_jgmenu_colors() {
 		-e 's/color_sep_fg = .*/color_sep_fg = #1A1C23/'
 }
 
-
 # Set Rofi launcher config
 set_launcher_config () {
 	sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
@@ -112,8 +140,8 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#151515;/' \
 		-e 's/\(selected: \).*/\1#67d4f1;/' \
 		-e 's/[^/]*-rofi/an-rofi/'
-
-	# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#f5eee6E6;/' \
 		-e 's/\(main-fg: \).*/\1#151515;/' \

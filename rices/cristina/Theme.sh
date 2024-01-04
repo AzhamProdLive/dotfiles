@@ -25,12 +25,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Rose-Pine Moon) Color scheme for Cristina Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *cristina_rose_pine/"
+# Default colors
+[colors.primary]
+background = "#1f1d29"
+foreground = "#eaeaea"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#c3a5e6"
+text = "#1f1d29"
+
+# Normal colors
+[colors.normal]
+black = "#6f6e85"
+blue = "#34738e"
+cyan = "#eabbb9"
+green = "#9bced7"
+magenta = "#c3a5e6"
+red = "#ea6f91"
+white = "#faebd7"
+yellow = "#f1ca93"
+
+# Bright colors
+[colors.bright]
+black = "#6f6e85"
+blue = "#34738e"
+cyan = "#ebbcba"
+green = "#9bced7"
+magenta = "#c3a5e6"
+red = "#ea6f91"
+white = "#e0def4"
+yellow = "#f1ca93"
+EOF
 }
 
 # Set compositor configuration
@@ -61,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#ea6f91\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#9bced7'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -113,21 +142,20 @@ set_jgmenu_colors() {
 # Set Rofi launcher config
 set_launcher_config () {
 	sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
-		-e '22s/\(font: \).*/\1"Terminess NF Mono Bold 10";/' \
+		-e '22s/\(font: \).*/\1"Terminess Nerd Font Mono Bold 10";/' \
 		-e 's/\(background: \).*/\1#1f1d29;/' \
 		-e 's/\(background-alt: \).*/\1#1f1d29E0;/' \
 		-e 's/\(foreground: \).*/\1#eaeaea;/' \
 		-e 's/\(selected: \).*/\1#c3a5e6;/' \
 		-e 's/[^/]*-rofi/cr-rofi/'
-
-	# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#1f1d29E6;/' \
 		-e 's/\(main-fg: \).*/\1#eaeaea;/' \
 		-e 's/\(select-bg: \).*/\1#c3a5e6;/' \
 		-e 's/\(select-fg: \).*/\1#1f1d29;/'
 }
-
 
 # Launch the bar and or eww widgets
 launch_bars() {

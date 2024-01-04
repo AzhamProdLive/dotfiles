@@ -25,12 +25,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Pencil light) color scheme for Aline Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *aline_pencil_light/"
+# Default colors
+[colors.primary]
+background = "#e5eafe"
+foreground = "#51576d"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#20bbfc"
+text = "#e5eafe"
+
+# Normal colors
+[colors.normal]
+black = "#212121"
+blue = "#008ec4"
+cyan = "#20a5ba"
+green = "#10a778"
+magenta = "#523c79"
+red = "#c30771"
+white = "#51576d"
+yellow = "#a89c14"
+
+# Bright colors
+[colors.bright]
+black = "#212121"
+blue = "#20bbfc"
+cyan = "#4fb8cc"
+green = "#5fd7af"
+magenta = "#6855de"
+red = "#fb007a"
+white = "#51576d"
+yellow = "#f3e430"
+EOF
 }
 
 # Set compositor configuration
@@ -61,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#fb007a\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#20bbfc'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -113,29 +142,28 @@ set_jgmenu_colors() {
 # Set Rofi launcher config
 set_launcher_config () {
 	sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
-		-e '22s/\(font: \).*/\"JetBrainsMono NF Bold 9";/' \
+		-e '22s/\(font: \).*/\1"JetBrainsMono NF Bold 9";/' \
 		-e 's/\(background: \).*/\1#f4f5f8;/' \
 		-e 's/\(background-alt: \).*/\1#f4f5f8E0;/' \
 		-e 's/\(foreground: \).*/\1#49495a;/' \
 		-e 's/\(selected: \).*/\1#ee6388;/' \
 		-e 's/[^/]*-rofi/al-rofi/'
-
-# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#f4f5f8E6;/' \
 		-e 's/\(main-fg: \).*/\1#49495a;/' \
 		-e 's/\(select-bg: \).*/\1#ee6388;/' \
 		-e 's/\(select-fg: \).*/\1#f4f5f8;/'
-
 }
-
 
 # Launch the bar
 launch_bars() {
-
+	
 	for mon in $(polybar --list-monitors | cut -d":" -f1); do
 		MONITOR=$mon polybar -q aline-bar -c ${rice_dir}/config.ini &
 	done
+	
 }
 
 

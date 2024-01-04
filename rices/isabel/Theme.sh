@@ -25,12 +25,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Onedark) Color scheme for Isabel Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *isabel_onedark/"
+# Default colors
+[colors.primary]
+background = "#14171c"
+foreground = "#b8bfe5"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#abb2bf"
+text = "#14171c"
+
+# Normal colors
+[colors.normal]
+black = "#5c6370"
+blue = "#4889be"
+cyan = "#49919a"
+green = "#81ae5f"
+magenta = "#7560d3"
+red = "#be5046"
+white = "#c5cddb"
+yellow = "#d19a66"
+
+# Bright colors
+[colors.bright]
+black = "#5c6370"
+blue = "#61afef"
+cyan = "#56b6c2"
+green = "#98c379"
+magenta = "#8677cf"
+red = "#e06c75"
+white = "#abb2bf"
+yellow = "#e5c07b"
+EOF
 }
 
 # Set compositor configuration
@@ -61,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#abb2bf\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#7560d3'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -113,21 +142,20 @@ set_jgmenu_colors() {
 # Set Rofi launcher config
 set_launcher_config () {
 	sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
-		-e '22s/\(font: \).*/\1"Terminess NF Mono Bold 10";/' \
+		-e '22s/\(font: \).*/\1"Terminess Nerd Font Mono Bold 10";/' \
 		-e 's/\(background: \).*/\1#14171c;/' \
 		-e 's/\(background-alt: \).*/\1#14171cE0;/' \
 		-e 's/\(foreground: \).*/\1#b8bfe5;/' \
 		-e 's/\(selected: \).*/\1#7560d3;/' \
 		-e 's/[^/]*-rofi/is-rofi/'
-
-	# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#14171cE6;/' \
 		-e 's/\(main-fg: \).*/\1#b8bfe5;/' \
 		-e 's/\(select-bg: \).*/\1#7560d3;/' \
 		-e 's/\(select-fg: \).*/\1#14171c;/'
 }
-
 
 # Launch the bar
 launch_bars() {

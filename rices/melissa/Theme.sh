@@ -25,12 +25,41 @@ set_bspwm_config() {
 
 # Reload terminal colors
 set_term_config() {
-	sed -i "$HOME"/.config/alacritty/fonts.yml \
-		-e "s/family: .*/family: JetBrainsMono NF/g" \
-		-e "s/size: .*/size: 10/g"
+	cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
+# (Nord) Color scheme for Melissa Rice
 
-	sed -i "$HOME"/.config/alacritty/rice-colors.yml \
-		-e "s/colors: .*/colors: *melissa_nord/"
+# Default colors
+[colors.primary]
+background = "#2e3440"
+foreground = "#d8dee9"
+
+# Cursor colors
+[colors.cursor]
+cursor = "#81a1c1"
+text = "#2e3440"
+
+# Normal colors
+[colors.normal]
+black = "#4c566a"
+blue = "#81a1c1"
+cyan = "#88c0d0"
+green = "#a3be8c"
+magenta = "#b48ead"
+red = "#bf616a"
+white = "#e5e9f0"
+yellow = "#ebcb8b"
+
+# Bright colors
+[colors.bright]
+black = "#4c566a"
+blue = "#81a1c1"
+cyan = "#8fbcbb"
+green = "#a3be8c"
+magenta = "#b48ead"
+red = "#bf616a"
+white = "#eceff4"
+yellow = "#ebcb8b"
+EOF
 }
 
 # Set compositor configuration
@@ -61,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#a3be8c\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#81a1c1'/g"
-
+		
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -113,14 +142,14 @@ set_jgmenu_colors() {
 # Set Rofi launcher config
 set_launcher_config () {
 	sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
-		-e '22s/\(font: \).*/\1"Terminess NF Mono Bold 10";/' \
+		-e '22s/\(font: \).*/\1"Terminess Nerd Font Mono Bold 10";/' \
 		-e 's/\(background: \).*/\1#2e3440;/' \
 		-e 's/\(background-alt: \).*/\1#2e3440E0;/' \
 		-e 's/\(foreground: \).*/\1#e5e9f0;/' \
 		-e 's/\(selected: \).*/\1#88c0d0;/' \
 		-e 's/[^/]*-rofi/me-rofi/'
-
-	# WallSelect menu colors
+		
+	# WallSelect menu colors	
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#2e3440E6;/' \
 		-e 's/\(main-fg: \).*/\1#e5e9f0;/' \
@@ -128,10 +157,9 @@ set_launcher_config () {
 		-e 's/\(select-fg: \).*/\1#2e3440;/'
 }
 
-
 # Launch the bar
 launch_bars() {
-
+	
 	for mon in $(polybar --list-monitors | cut -d":" -f1); do
 		(MONITOR=$mon polybar -q mel-bar -c ${rice_dir}/config.ini)&
 		(MONITOR=$mon polybar -q mel2-bar -c ${rice_dir}/config.ini)&
