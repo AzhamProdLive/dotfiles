@@ -78,7 +78,7 @@ set_stalonetray_config() {
 	sed -i "$HOME"/.config/bspwm/stalonetrayrc \
 		-e "s/background .*/background \"#1D1F28\"/" \
 		-e "s/vertical .*/vertical true/" \
-		-e "s/geometry .*/geometry 1x1-998+54/" \
+		-e "s/geometry .*/geometry 1x1-1200+54/" \
 		-e "s/grow_gravity .*/grow_gravity NE/" \
 		-e "s/icon_gravity .*/icon_gravity NE/"
 }
@@ -91,7 +91,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#8897F4\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#79E6F3'/g"
-		
+
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -149,8 +149,8 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#c0caf5;/' \
 		-e 's/\(selected: \).*/\1#6C77BB;/' \
 		-e 's/[^/]*-rofi/pa-rofi/'
-		
-	# WallSelect menu colors	
+
+	# WallSelect menu colors
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#1D1F28BF;/' \
 		-e 's/\(main-fg: \).*/\1#c0caf5;/' \
