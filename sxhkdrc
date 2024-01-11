@@ -104,8 +104,8 @@ super + m
 	bspc desktop -l next
 
 # set the window state
-super + {t,shift + t}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {t,shift + t,f}
+	bspc node -t {tiled,pseudo_tiled,fullscreen}
 
 # Hide/Unhide Window
 ctrl + alt + h
