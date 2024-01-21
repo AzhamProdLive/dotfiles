@@ -36,9 +36,7 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Steam, steam, steam
     Heroic Games Launcher, heroic, /usr/share/icons/Papirus/32x32/apps/heroic.svg
     Lutris, lutris, /usr/share/icons/Papirus/32x32/apps/lutris.svg
-    Osu!, gamemoderun osu-wine --devserver ripple.moe, /usr/share/icons/Papirus/32x32/apps/osu.svg
     Minecraft, gamemoderun legacylauncher, /usr/share/icons/Papirus/32x32/apps/minecraft.svg
-    League of Legends, gamemoderun leagueoflegends start, /usr/share/icons/Papirus/32x32/apps/league-of-legends.svg
     Tetr.io, gamemoderun tetrio-plus-bin, /usr/share/icons/Papirus/32x32/apps/tetrio-desktop.svg
     Yuzu, yuzu, /usr/share/icons/Papirus/32x32/apps/yuzu.svg
 
@@ -46,7 +44,6 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Discord, discord, discord
     Discord screenaudio, discord-screenaudio, discord
     Armcord, armcord, armcord
-    Element, element-desktop, /usr/share/icons/Papirus/32x32/apps/element-desktop.svg
     Guilded, guilded, /usr/share/icons/Papirus/32x32/apps/guilded.svg
 
 ^tag(vms)
