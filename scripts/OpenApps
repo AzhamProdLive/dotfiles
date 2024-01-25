@@ -66,7 +66,7 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 			;;
 	  # My widgets
 	  --games)
-	    rofi -modi games -show games -theme $HOME/.config/bspwm/scripts/RiceSelector.rasi
+	    rofi -modi games -show games -theme games-default
 	    ;;
 		*)
 			echo "Invalid Option"
