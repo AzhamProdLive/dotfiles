@@ -30,12 +30,6 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--checkupdates)
 			alacritty --hold --class Updating,FloaTerm -o window.dimensions.lines=22 window.dimensions.columns=47 -e Updates --print-updates
 			;;
-		--ranger)
-			alacritty --class FloaTerm,FloaTerm -o window.dimensions.lines=14 window.dimensions.columns=90 -e ranger
-			;;
-		--nvim)
-			alacritty -e nvim
-			;;
 		--music)
 			alacritty --class FloaTerm,FloaTerm -o window.dimensions.lines=18 window.dimensions.columns=67 -e ncmpcpp
 			;;
@@ -50,9 +44,6 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 			;;
 		--editor)
 			~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh
-			;;
-	  --telegram)
-			telegram-desktop
 			;;
 		--whats)
 			whatsapp-nativefier --disable-gpu
@@ -73,6 +64,10 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--calendar)
 			eww -c "$WIDGET_DIR" open --toggle date
 			;;
+	  # My widgets
+	  --games)
+	    rofi -modi games -show games -theme $HOME/.config/bspwm/scripts/RiceSelector.rasi
+	    ;;
 		*)
 			echo "Invalid Option"
 			;;

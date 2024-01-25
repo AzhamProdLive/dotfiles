@@ -43,7 +43,6 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 ^tag(socials)
     Discord, discord, discord
     Discord screenaudio, discord-screenaudio, discord
-    Armcord, armcord, armcord
     Guilded, guilded, /usr/share/icons/Papirus/32x32/apps/guilded.svg
 
 ^tag(vms)
