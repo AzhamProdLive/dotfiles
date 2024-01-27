@@ -115,8 +115,8 @@ _EOF_
 set_eww_colors() {
 	cat > "$HOME"/.config/bspwm/eww/colors.scss << EOF
 // Eww colors for Pamela rice
-\$bg: #1D1F28;
-\$bg-alt: #1F222B;
+\$bg: #000000;
+\$bg-alt: #141820;
 \$fg: #FDFDFD;
 \$black: #56687E;
 \$lightblack: #262831;
@@ -133,7 +133,7 @@ EOF
 # Set jgmenu colors for Pamela
 set_jgmenu_colors() {
 	sed -i "$HOME"/.config/bspwm/jgmenurc \
-		-e 's/color_menu_bg = .*/color_menu_bg = #1D1F28/' \
+		-e 's/color_menu_bg = .*/color_menu_bg = #000000/' \
 		-e 's/color_norm_fg = .*/color_norm_fg = #a5b6cf/' \
 		-e 's/color_sel_bg = .*/color_sel_bg = #1F222B/' \
 		-e 's/color_sel_fg = .*/color_sel_fg = #a5b6cf/' \
