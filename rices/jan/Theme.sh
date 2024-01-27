@@ -90,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#fb007a\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#f9f9f9'/g"
-		
+
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -148,8 +148,8 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#c0caf5;/' \
 		-e 's/\(selected: \).*/\1#fb007af0;/' \
 		-e 's/[^/]*-rofi/ja-rofi/'
-		
-	# WallSelect menu colors	
+
+	# WallSelect menu colors
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#070219F0;/' \
 		-e 's/\(main-fg: \).*/\1#c0caf5;/' \
