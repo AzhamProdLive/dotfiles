@@ -1,13 +1,13 @@
 .launchermenu {
-    background-color: $bg;
-    border-radius: 0.5rem;
-    margin: .8rem .8rem;
-    min-width: 18rem;
+  background-color: $bg;
+  border-radius: 0.5rem;
+  margin: .8rem .8rem;
+  min-width: 18rem;
 }
 
 .timebox {
   margin: 0 2.5rem;
-    .time-container {
+  .time-container {
     .content {
       font-family: JetBrainsMono NF;
       font-weight: Bolder;
@@ -15,7 +15,7 @@
       color: $fg;
     }
     .divider {
-      margin: .2rem 15px;
+      margin: 0.2rem 15px;
       padding: 0px 1px;
       background: linear-gradient($red, $magenta, $blue, $cyan);
     }
@@ -30,71 +30,71 @@
 }
 
 .usercard {
-	background-color: $bg-alt;
-	border-radius: 0.5rem;
+  background-color: $bg-alt;
+  border-radius: 0.5rem;
 }
 
 .face {
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-	min-height: 65px;
-	min-width: 65px;
-	//border: .2rem solid $bg;
-	border-radius: 100%;
-	box-shadow: 0 0 7px 1px rgba($fg, 0.3);
-	margin: 10px -8px 10px 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 65px;
+  min-width: 65px;
+  //border: .2rem solid $bg;
+  border-radius: 100%;
+  box-shadow: 0 0 7px 1px rgba($fg, 0.3);
+  margin: 10px -8px 10px 10px;
 }
 
 .user-host {
-	color: $fg;
-	font-family: Cartograph CF;
-	font-weight: Normal;
-	font-size: 1rem;
+  color: $fg;
+  font-family: Cartograph CF;
+  font-weight: Normal;
+  font-size: 1rem;
 }
 
 .host {
-	color: $fg;
-	font-family: Cartograph CF;
-	font-size: .8rem;
+  color: $fg;
+  font-family: Cartograph CF;
+  font-size: .8rem;
 }
 
 .uptime {
-	color: $fg;
-	font-family: Cartograph CF;
-	font-size: .7rem;
-	margin-top: .5rem;
+  color: $fg;
+  font-family: Cartograph CF;
+  font-size: .7rem;
+  margin-top: .5rem;
 }
 
 .btn-info {
-	font-family: Material Design Icons Desktop;
-	font-size: 1.2rem;
-	color: $fg;
-	padding: 0 .6rem;
+  font-family: Material Design Icons Desktop;
+  font-size: 1.2rem;
+  color: $fg;
+  padding: 0 .6rem;
 }
 
 .btn-info:hover {
-	text-shadow: 0 0 2px $fg;
+  text-shadow: 0 0 2px $fg;
 }
 
 .usearch {
-	background-color: $bg-alt;
-	padding: .8rem;
-	border-radius: 0.5rem;
-	color: $fg;
+  background-color: $bg-alt;
+  padding: .8rem;
+  border-radius: 0.5rem;
+  color: $fg;
 }
 
 .launcher-pfp-label {
-    font-family: Inconsolata SemiCondensed Medium;
-    font-weight: Bold;
-    font-size: 1rem;
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+  font-size: 1rem;
 }
 
 .pacman {
-	background-color: $bg-alt;
-	padding: .8rem;
-	border-radius: 0.5rem;
-	color: $fg;
+  background-color: $bg-alt;
+  padding: .8rem;
+  border-radius: 0.5rem;
+  color: $fg;
 
 	.pacman-icon {
 		font-family: Material Design Icons Desktop;
