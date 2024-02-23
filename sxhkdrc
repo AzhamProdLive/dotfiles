@@ -129,3 +129,8 @@ super + ctrl + shift + {Left,Right}
 # contract a window
 super + alt + shift + {Left,Down,Up,Right}
 	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
+
+# expand a window
+super + alt + {Left,Down,Up,Right}
+	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
+

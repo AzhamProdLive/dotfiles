@@ -25,12 +25,16 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     KdenLive, kdenlive, /usr/share/icons/Papirus/32x32/apps/org.kde.kdenlive.svg
     Octopi, /usr/bin/octopi, /usr/share/icons/Papirus/32x32/apps/octopi.svg
     Packet Tracer, packettracer, /usr/share/icons/Papirus/32x32/apps/packet-tracer.svg
+    Krita, krita, /usr/share/icons/Papirus/32x32/apps/krita.svg
+    Solaar, solaar, /usr/share/icons/Papirus/32x32/apps/solaar.svg
+    Thunderbird, thunderbird, /usr/share/icons/Papirus/32x32/apps/thunderbird.svg
 
 ^tag(editors)
     Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
     IntelliJ Idea,OpenApps --editor, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
     DataGrip, ~/.local/share/JetBrains/Toolbox/apps/datagrip-2/bin/datagrip.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.DataGrip.svg
     PyCharm, ~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.PyCharm-Professional.svg
+    Android Studio, ~/.local/share/JetBrains/Toolbox/apps/android-studio/bin/studio.sh, /usr/share/icons/Papirus/32x32/apps/android-studio.svg
 
 ^tag(games)
     Steam, steam, steam
@@ -39,10 +43,12 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Minecraft, gamemoderun legacylauncher, /usr/share/icons/Papirus/32x32/apps/minecraft.svg
     Tetr.io, gamemoderun tetrio-plus-bin, /usr/share/icons/Papirus/32x32/apps/tetrio-desktop.svg
     Yuzu, yuzu, /usr/share/icons/Papirus/32x32/apps/yuzu.svg
+    Honkers Launcher, honkers-launcher-bin, honkers-launcher
+    The Honkers Railway Launcher, honkers-railway-launcher-bin, honkers-railway-launcher
 
 ^tag(socials)
     Discord, discord, discord
-    Discord screenaudio, discord-screenaudio, discord
+    Vesktop, vesktop, vesktop
     Guilded, guilded, /usr/share/icons/Papirus/32x32/apps/guilded.svg
 
 ^tag(vms)
