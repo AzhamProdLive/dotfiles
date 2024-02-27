@@ -45,9 +45,6 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--editor)
 			~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh
 			;;
-		--whats)
-			whatsapp-nativefier --disable-gpu
-			;;
 		--soundcontrol)
 			pavucontrol
 			;;

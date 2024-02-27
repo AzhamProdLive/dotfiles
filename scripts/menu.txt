@@ -43,7 +43,7 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Tetr.io, gamemoderun tetrio-plus-bin, /usr/share/icons/Papirus/32x32/apps/tetrio-desktop.svg
     Yuzu, yuzu, /usr/share/icons/Papirus/32x32/apps/yuzu.svg
     Honkers Launcher, honkers-launcher-bin, honkers-launcher
-    The Honkers Railway Launcher, honkers-railway-launcher-bin, honkers-railway-launcher
+    The Honkers Railway Launcher, the-honkers-railway-launcher, the-honkers-railway-launcher
 
 ^tag(socials)
     Discord, discord, discord
