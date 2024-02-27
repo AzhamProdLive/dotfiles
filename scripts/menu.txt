@@ -1,5 +1,5 @@
 Terminal,OpenApps --floating,/usr/share/icons/Papirus/32x32/apps/terminal.svg
-Firefox,OpenApps --browser, firefox
+Floorp,OpenApps --browser, floorp
 File Manager,OpenApps --filemanager,/usr/share/icons/Papirus/32x32/apps/org.xfce.thunar.svg
 
 ^sep()
@@ -34,7 +34,6 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     IntelliJ Idea,OpenApps --editor, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.IntelliJ-IDEA-Ultimate.svg
     DataGrip, ~/.local/share/JetBrains/Toolbox/apps/datagrip-2/bin/datagrip.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.DataGrip.svg
     PyCharm, ~/.local/share/JetBrains/Toolbox/apps/pycharm-professional/bin/pycharm.sh, /usr/share/icons/Papirus/32x32/apps/com.jetbrains.PyCharm-Professional.svg
-    Android Studio, ~/.local/share/JetBrains/Toolbox/apps/android-studio/bin/studio.sh, /usr/share/icons/Papirus/32x32/apps/android-studio.svg
 
 ^tag(games)
     Steam, steam, steam

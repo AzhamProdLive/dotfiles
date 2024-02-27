@@ -40,7 +40,7 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 			thunar
 			;;
 		--browser)
-			firefox
+			floorp
 			;;
 		--editor)
 			~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh
