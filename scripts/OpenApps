@@ -65,6 +65,9 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 	  --games)
 	    rofi -modi games -show games -theme games-default
 	    ;;
+	  --Rofi)
+	    ~/.config/bspwm/scripts/rofi-network-manager.sh &
+	    ;;
 		*)
 			echo "Invalid Option"
 			;;

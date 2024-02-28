@@ -17,6 +17,27 @@ color_sel_fg = "#a5b6cf"
 color_sep_fg = "#56687E"
 
 
+type = internal/network
+interface = wlan0
+interval = 3.0
+unknown-as-up = true
+accumulate-stats = true
+format-connected = <label-connected>
+    label-connected = "%netspeed%"
+    format-connected-prefix = ""
 
+    format-connected-prefix-padding = 3pt
+    format-connected-foreground = ${pamela.green}
+    speed-unit = ""
 
+    label-connected-foreground = ${pamela.amber}
+    format-disconnected = <label-disconnected>
+    label-disconnected = "Offline"
+    format-disconnected-prefix = ""
+
+    format-disconnected-prefix-padding = 3pt
+    format-disconnected-foreground = ${pamela.red}
+
+    label-disconnected-foreground = ${pamela.red}
+    ;;
 
