@@ -40,7 +40,7 @@ text = "#2e3440"
 
 # Normal colors
 [colors.normal]
-black = "#4c566a"
+black = "#3b4252"
 blue = "#81a1c1"
 cyan = "#88c0d0"
 green = "#a3be8c"
@@ -90,7 +90,7 @@ set_dunst_config() {
 		-e "s/separator_color = .*/separator_color = \"#a3be8c\"/g" \
 		-e "s/font = .*/font = JetBrainsMono NF Medium 9/g" \
 		-e "s/foreground='.*'/foreground='#81a1c1'/g"
-		
+
 	sed -i '/urgency_low/Q' "$HOME"/.config/bspwm/dunstrc
 	cat >> "$HOME"/.config/bspwm/dunstrc <<- _EOF_
 			[urgency_low]
@@ -148,8 +148,8 @@ set_launcher_config () {
 		-e 's/\(foreground: \).*/\1#e5e9f0;/' \
 		-e 's/\(selected: \).*/\1#88c0d0;/' \
 		-e 's/[^/]*-rofi/me-rofi/'
-		
-	# WallSelect menu colors	
+
+	# WallSelect menu colors
 	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
 		-e 's/\(main-bg: \).*/\1#2e3440E6;/' \
 		-e 's/\(main-fg: \).*/\1#e5e9f0;/' \
@@ -159,7 +159,7 @@ set_launcher_config () {
 
 # Launch the bar
 launch_bars() {
-	
+
 	for mon in $(polybar --list-monitors | cut -d":" -f1); do
 		(MONITOR=$mon polybar -q mel-bar -c ${rice_dir}/config.ini)&
 		(MONITOR=$mon polybar -q mel2-bar -c ${rice_dir}/config.ini)&
