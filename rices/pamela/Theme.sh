@@ -130,21 +130,22 @@ set_jgmenu_colors() {
 
 # Set Rofi launcher config
 set_launcher_config () {
-	sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
-		-e '22s/\(font: \).*/\1"Terminess Nerd Font Mono Bold 10";/' \
-		-e 's/\(background: \).*/\1#1D1F28;/' \
-		-e 's/\(background-alt: \).*/\1#1D1F28E0;/' \
-		-e 's/\(foreground: \).*/\1#c0caf5;/' \
-		-e 's/\(selected: \).*/\1#6C77BB;/' \
-		-e "s/rices\/[[:alnum:]\-]*/rices\/${RICETHEME}/g"
+    sed -i "$HOME/.config/bspwm/scripts/Launcher.rasi" \
+        -e '22s/\(font: \).*/\1"Terminess Nerd Font Mono Bold 10";/' \
+        -e 's/\(background: \).*/\1#1D1F28;/' \
+        -e 's/\(background-alt: \).*/\1#1D1F28E0;/' \
+        -e 's/\(foreground: \).*/\1#c0caf5;/' \
+        -e 's/\(selected: \).*/\1#6C77BB;/' \
+        -e "s/rices\/[[:alnum:]\-]*/rices\/${RICETHEME}/g"
 
-	# WallSelect menu colors
-	sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
-		-e 's/\(main-bg: \).*/\1#1D1F28BF;/' \
-		-e 's/\(main-fg: \).*/\1#c0caf5;/' \
-		-e 's/\(select-bg: \).*/\1#6C77BB;/' \
-		-e 's/\(select-fg: \).*/\1#1D1F28;/'
+    # WallSelect menu colors
+    sed -i "$HOME/.config/bspwm/scripts/WallSelect.rasi" \
+        -e 's/\(main-bg: \).*/\1#1D1F28BF;/' \
+        -e 's/\(main-fg: \).*/\1#c0caf5;/' \
+        -e 's/\(select-bg: \).*/\1#6C77BB;/' \
+        -e 's/\(select-fg: \).*/\1#1D1F28;/'
 }
+
 
 # Launch the bar
 launch_bars() {
