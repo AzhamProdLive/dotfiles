@@ -26,39 +26,39 @@ set_bspwm_config() {
 # Reload terminal colors
 set_term_config() {
     cat > "$HOME"/.config/alacritty/rice-colors.toml << EOF
-# (Dracula) color scheme for Marisol Rice
+# Color scheme for Pamela Rice
 
 # Default colors
 [colors.primary]
-background = "#282a36"
-foreground = "#f8f8f2"
+background = "#1D1F28"
+foreground = "#FDFDFD"
 
 # Cursor colors
 [colors.cursor]
-cursor = "#f8f8f2"
-text = "#282a36"
+cursor = "#FF4971"
+text = "#1D1F28"
 
 # Normal colors
 [colors.normal]
-black = "#21222c"
-blue = "#bd93f9"
-cyan = "#8be9fd"
-green = "#50fa7b"
-magenta = "#ff79c6"
-red = "#ff5555"
-white = "#f8f8f2"
-yellow = "#f1fa8c"
+black = "#3D4C5F"
+blue = "#8897F4"
+cyan = "#79E6F3"
+green = "#5ADECD"
+magenta = "#C574DD"
+red = "#F37F97"
+white = "#FDFDFD"
+yellow = "#F2A272"
 
 # Bright colors
 [colors.bright]
-black = "#6272a4"
-blue = "#d6acff"
-cyan = "#a4ffff"
-green = "#69ff94"
-magenta = "#ff92df"
-red = "#ff6e6e"
-white = "#ffffff"
-yellow = "#ffffa5"
+black = "#56687E"
+blue = "#556FFF"
+cyan = "#3FDCEE"
+green = "#18E3C8"
+magenta = "#B043D1"
+red = "#FF4971"
+white = "#BEBEC1"
+yellow = "#FF8037"
 EOF
 }
 
@@ -103,30 +103,30 @@ _EOF_
 # Set eww colors
 set_eww_colors() {
     cat > "$HOME"/.config/bspwm/eww/colors.scss << EOF
-// Eww colors for Marisol rice
-\$bg: #282a36;
-\$bg-alt: #2f3240;
-\$fg: #f8f8f2;
-\$black: #21222c;
-\$lightblack: #727169;
-\$red: #ff5555;
-\$blue: #bd93f9;
-\$cyan: #8be9fd;
-\$magenta: #ff79c6;
-\$green: #50fa7b;
-\$yellow: #f1fa8c;
+// Eww colors for Pamela rice
+\$bg: #000000;
+\$bg-alt: #141820;
+\$fg: #FDFDFD;
+\$black: #56687E;
+\$lightblack: #262831;
+\$red: #F37F97;
+\$blue: #8897F4;
+\$cyan: #79E6F3;
+\$magenta: #B043D1;
+\$green: #90ceaa;
+\$yellow: #F2A272;
 \$archicon: #0f94d2;
 EOF
 }
 
-# Set jgmenu colors for Marisol
+# Set jgmenu colors
 set_jgmenu_colors() {
-    sed -i "$HOME"/.config/bspwm/jgmenurc \
-        -e 's/color_menu_bg = .*/color_menu_bg = #282a36/' \
-        -e 's/color_norm_fg = .*/color_norm_fg = #f8f8f2/' \
-        -e 's/color_sel_bg = .*/color_sel_bg = #4c566a/' \
-        -e 's/color_sel_fg = .*/color_sel_fg = #f8f8f2/' \
-        -e 's/color_sep_fg = .*/color_sep_fg = #bd93f9/'
+	sed -i "$HOME"/.config/bspwm/jgmenurc \
+		-e 's/color_menu_bg = .*/color_menu_bg = #000000/' \
+		-e 's/color_norm_fg = .*/color_norm_fg = #a5b6cf/' \
+		-e 's/color_sel_bg = .*/color_sel_bg = #1F222B/' \
+		-e 's/color_sel_fg = .*/color_sel_fg = #a5b6cf/' \
+		-e 's/color_sep_fg = .*/color_sep_fg = #56687E/'
 }
 
 # Set Rofi launcher config
