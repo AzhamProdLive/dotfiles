@@ -42,7 +42,7 @@ window {
 	text-color:			@foreground;
 	background-color:	@background;
 	border-radius: 		6px;
-	padding: 			10;
+	padding: 			5;
 }
 mainbox {
 	border:		0;
