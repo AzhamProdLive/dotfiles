@@ -27,7 +27,8 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Packet Tracer, packettracer, /usr/share/icons/Papirus/32x32/apps/packet-tracer.svg
     Krita, krita, /usr/share/icons/Papirus/32x32/apps/krita.svg
     Solaar, solaar, /usr/share/icons/Papirus/32x32/apps/solaar.svg
-    Thunderbird, thunderbird, /usr/share/icons/Papirus/32x32/apps/thunderbird.svg
+    Proton Mail, proton-mail, /usr/share/icons/Papirus/32x32/apps/protonmail-bridge.svg
+    ProtonVPN, protonvpn, /usr/share/icons/Papirus/32x32/apps/protonvpn-logo.svg
 
 ^tag(editors)
     Jetbrains Toolbox, jetbrains-toolbox, /usr/share/icons/Papirus/32x32/apps/jetbrains-toolbox.svg
@@ -53,6 +54,7 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 ^tag(vms)
     VMware Workstation, vmware, /usr/share/icons/Papirus/32x32/apps/vmware-workstation.svg
     VMware Workstation Player, vmplayer, /usr/share/icons/Papirus/32x32/apps/vmware-player.svg
+    Virtual Machine Manager, virt-manager, /usr/share/icons/Papirus/32x32/apps/virt-manager.svg
 
 ^tag(wg)
     User Card,OpenApps --usercard,/usr/share/icons/Papirus/32x32/apps/system-users.svg

@@ -1,6 +1,5 @@
 [jan]
-bg = "#E6212a4c"
-bg-alt = "#708491"
+bg = "#00282a36"
 fg = "#27fbfe"
 ac = "#4DD0E1"
 blue-arch = "#00c9fe"
@@ -16,6 +15,11 @@ color_sel_bg = "#1F222B"
 color_sel_fg = "#a5b6cf"
 color_sep_fg = "#56687E"
 
+bg = "#282a36"
+bg-alt = "#282a36"
+fg = "#f8f8f2"
+mb = "#25292e"
+trans = "#00282a36"
 
 type = internal/network
 interface = wlan0
