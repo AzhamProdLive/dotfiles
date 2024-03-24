@@ -30,6 +30,9 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--checkupdates)
 			alacritty --hold --class Updating,FloaTerm -o window.dimensions.lines=22 window.dimensions.columns=47 -e Updates --print-updates
 			;;
+	  --netmanager)
+  	  NetManagerDM
+  	  ;;
 		--music)
 			alacritty --class FloaTerm,FloaTerm -o window.dimensions.lines=18 window.dimensions.columns=67 -e ncmpcpp
 			;;

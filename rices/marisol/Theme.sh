@@ -145,7 +145,17 @@ set_launcher_config () {
         -e 's/\(main-fg: \).*/\1#f8f8f2;/' \
         -e 's/\(select-bg: \).*/\1#bd93f9;/' \
         -e 's/\(select-fg: \).*/\1#f8f8f2;/'
+
+    # NetworkManager launcher
+    sed -i "$HOME/.config/bspwm/scripts/NetManagerDM.rasi" \
+      -e '12s/\(background: \).*/\1#282a36;/' \
+      -e '13s/\(background-alt: \).*/\1#2f3240;/' \
+      -e '14s/\(foreground: \).*/\1#f8f8f2;/' \
+      -e '15s/\(selected: \).*/\1#bd93f9;/' \
+      -e '16s/\(active: \).*/\1#50fa7b;/' \
+      -e '17s/\(urgent: \).*/\1#ff6e6e;/'
 }
+
 
 # Launch the bar
 launch_bars() {
