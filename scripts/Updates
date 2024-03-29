@@ -7,7 +7,7 @@
 #	url: https://github.com/gh0stzk
 
 get_total_updates() {
-local total_updates=$(($(checkupdates 2> /dev/null | wc -l || echo 0) + $(paru -Qua 2> /dev/null | wc -l || echo 0)))
+local total_updates=$(($(checkupdates 2> /dev/null | wc -l || echo 0) + $(aura -Qua 2> /dev/null | wc -l || echo 0)))
 echo "${total_updates:-0}"
 }
 
@@ -18,7 +18,7 @@ get_list_updates() {
 
 get_list_aur_updates() {
 	echo -e "\n\033[1m\033[34mAur updates available:\033[0m"
-	paru -Qua | sed 's/->/\x1b[32;1m\x1b[0m/g'
+	aura -Qua | sed 's/->/\x1b[32;1m\x1b[0m/g'
 }
 
 print_updates() {
@@ -34,7 +34,7 @@ fi
 }
 
 update_system() {
-	paru -Syu --nocombinedupgrade
+	sudo aura -Syu
 }
 
 case "$1" in
@@ -42,7 +42,7 @@ case "$1" in
   --print-updates)print_updates;;
   --update-system)update_system;;
   --help|*)echo -e "Updates [options]
-  
+
 Options:
 	--get-updates		Get the numer of updates available.
 	--print-updates		Print the available package to updates.
