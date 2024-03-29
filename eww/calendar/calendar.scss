@@ -20,10 +20,10 @@
     padding: 0.5rem 0.15rem 0.2rem;
     margin-left: 10px;
 
-    & > * {
+    &>* {
       border: solid 0px transparent;
     }
-    
+
     &.highlight {
       padding: 10rem;
     }

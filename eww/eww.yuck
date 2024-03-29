@@ -2,3 +2,4 @@
 (include "powermenu/powermenu.yuck")
 (include "profilecard/profilecard.yuck")
 (include "player/player.yuck")
+(include "date/date.yuck")
