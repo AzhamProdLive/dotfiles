@@ -19,7 +19,7 @@ super + alt + Return
 
 # Application Menu
 super + @space
-	OpenApps --menu
+	rofi -show drun -theme $HOME/.config/bspwm/scripts/Launcher.rasi
 
 # Games Menu
 super + alt + @space

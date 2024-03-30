@@ -116,6 +116,14 @@ set_eww_colors() {
 \$green: #90ceaa;
 \$yellow: #F2A272;
 \$archicon: #0f94d2;
+\$darkbg: #0b0d16;
+\$contrastbg: #0f111a;
+\$bgSecondary: #11131c;
+\$bgSecondaryAlt: #a5b6cf;
+\$fgDim: #a5b6cf;
+\$watermelon: #dd6777;
+\$kuning: #f2ed00;
+\$lightblack: #262831;
 EOF
 }
 

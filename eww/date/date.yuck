@@ -46,7 +46,7 @@
   )
 )
 
-(defwindow date
+(defwindow calendar
   :geometry (geometry :x "-10px"
                       :y "50px"
                       :width "0px" ; automatically generated

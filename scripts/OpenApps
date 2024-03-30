@@ -12,9 +12,6 @@
 WIDGET_DIR="$HOME/.config/bspwm/eww"
 
 	case "$1" in
-		--menu)
-			rofi -show drun -theme $HOME/.config/bspwm/scripts/Launcher.rasi
-			;;
 		--rice)
 			RiceSelector
 			;;
@@ -24,18 +21,9 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--floating)
 			alacritty --class FloaTerm,FloaTerm -o window.dimensions.lines=22 window.dimensions.columns=90
 			;;
-		--update)
-			alacritty --hold --class FloaTerm,FloaTerm -o window.dimensions.lines=22 window.dimensions.columns=90 -e Updates --update-system
-			;;
-		--checkupdates)
-			alacritty --hold --class Updating,FloaTerm -o window.dimensions.lines=22 window.dimensions.columns=47 -e Updates --print-updates
-			;;
 	  --netmanager)
   	  NetManagerDM
   	  ;;
-		--music)
-			alacritty --class FloaTerm,FloaTerm -o window.dimensions.lines=18 window.dimensions.columns=67 -e ncmpcpp
-			;;
 		--fetch)
 			alacritty --hold --class FloaTerm,FloaTerm -o window.dimensions.lines=26 window.dimensions.columns=40 -e ~/.local/bin/sysfetch;;
 		# Apps
@@ -47,9 +35,6 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 			;;
 		--editor)
 			~/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/bin/idea.sh
-			;;
-		--soundcontrol)
-			pavucontrol
 			;;
 		# Eww Widgets
 		--powermenu)
