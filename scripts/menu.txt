@@ -51,7 +51,6 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 ^tag(vms)
     VMware Workstation, vmware, /usr/share/icons/Papirus/32x32/apps/vmware-workstation.svg
     VMware Workstation Player, vmplayer, /usr/share/icons/Papirus/32x32/apps/vmware-player.svg
-    Virtual Machine Manager, virt-manager, /usr/share/icons/Papirus/32x32/apps/virt-manager.svg
 
 ^tag(wg)
     User Card,OpenApps --usercard,/usr/share/icons/Papirus/32x32/apps/system-users.svg
