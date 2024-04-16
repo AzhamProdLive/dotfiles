@@ -9,6 +9,10 @@
 
 #|||----- Applications -----|||#
 
+# Show help
+F1
+	OpenApps --KeyHelp
+
 # Open Terminal (alacritty)
 super + Return
 	OpenApps --terminal
@@ -33,10 +37,6 @@ shift + alt + {g,n}
 
 #|||----- System Keybindings -----|||#
 
-# Show keybindings help
-alt + F1
-	KeybindingsHelp
-
 # Theme Selector
 alt + @space
 	RiceSelector
@@ -54,11 +54,11 @@ ctrl + super + alt + {p,r,q,l,k}
 	{systemctl poweroff, systemctl reboot,bspc quit,physlock -d,xkill}
 
 # Hide/Show Bar (Polybar and/or eww)
-super + {h,u}
+super + alt + {h,u}
 	HideBar {-h,-u}
 
 # Change transparency on focused window
-ctrl + alt + {plus,minus,t}
+ctrl + alt + {plus,minus,equal}
 	picom-trans {-c -o +3,-c -o -1,-c -d}
 
 # Random wallpaper
@@ -113,7 +113,7 @@ ctrl + alt + h
 #####
 
 # Switch workspaces
-super + ctrl + {Left,Right}
+super + {Left,Right}
 	bspc desktop -f {prev,next}.local
 
 # Quick Switch between the last 2 workspaces(
@@ -121,13 +121,13 @@ super + {grave,Tab}
 	bspc {node,desktop} -f last
 
 # Send focused Node to workspace directionally
-super + ctrl + shift + {Left,Right}
+super + alt + {Left,Right}
 	bspc node -d {prev,next} '--follow'
 
 #####
 
 # contract a window
-super + alt + shift + {Left,Down,Up,Right}
+ctrl + shift + alt + {Left,Down,Up,Right}
 	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
 
 # expand a window

@@ -49,6 +49,9 @@ WIDGET_DIR="$HOME/.config/bspwm/eww"
 		--calendar)
 			eww -c "$WIDGET_DIR" open --toggle date
 			;;
+	    --KeyHelp)
+  		eww -c "$WIDGET_DIR" open --toggle csheet
+  		;;
 	  # My widgets
 	  --games)
 	    rofi -modi games -show games -theme games-default

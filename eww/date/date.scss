@@ -5,22 +5,29 @@
 }
 
 .timebox {
-  margin: 30px 0px;
+  margin: 1.2rem 3.5rem 0 3.5rem;
+
   .time-container {
     .content {
-      font-family: Product Sans;
-      font-weight: bolder;
-      font-size: 60px;
+      font-family: JetBrainsMono NF;
+      font-weight: Bolder;
+      font-size: 3.6rem;
+      color: $fg;
     }
+
     .divider {
-      margin: 8px 15px;
+      margin: 0.2rem 15px;
       padding: 0px 1px;
-      background: linear-gradient(#F37F97, #B043D1, #8897F4, #79E6F3);
+      background: linear-gradient($red, $magenta, $blue, $cyan);
     }
   }
+
   .date-container {
-    font-family: Product Sans;
-    margin-top: 2px;
+    font-family: Inconsolata SemiCondensed Medium;
+    font-weight: Bold;
+    font-size: 1rem;
+    color: $fg;
+    margin: 5px 0;
   }
 }
 
@@ -33,7 +40,7 @@
   padding: 0 1rem 0.2rem;
   color: $fg;
   background-color: $bg-alt;
-  margin: 0.6rem 0.6rem 0.6rem 0.6rem;
+  margin: 0.9rem 0.6rem 0.9rem 0.6rem;
 
   .cal {
     background-color: inherit;
