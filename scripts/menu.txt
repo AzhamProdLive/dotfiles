@@ -20,7 +20,6 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
     Bluetooth, blueman-manager, /usr/share/icons/Papirus/32x32/apps/blueman.svg
     Qbittorrent, qbittorrent, /usr/share/icons/Papirus/32x32/apps/qbittorrent.svg
     RustDesk, rustdesk, /usr/share/icons/Papirus/32x32/apps/rustdesk.svg
-    KdenLive, kdenlive, /usr/share/icons/Papirus/32x32/apps/org.kde.kdenlive.svg
     Packet Tracer, packettracer, /usr/share/icons/Papirus/32x32/apps/packet-tracer.svg
     Krita, krita, /usr/share/icons/Papirus/32x32/apps/krita.svg
     Solaar, solaar, /usr/share/icons/Papirus/32x32/apps/solaar.svg
@@ -45,7 +44,6 @@ Exit,^checkout(exit),/usr/share/icons/Papirus/32x32/apps/system-shutdown.svg
 ^tag(socials)
     Discord, discord, discord
     Vesktop, vesktop, vesktop
-    Guilded, guilded, /usr/share/icons/Papirus/32x32/apps/guilded.svg
 
 ^tag(vms)
     VMware Workstation, vmware, /usr/share/icons/Papirus/32x32/apps/vmware-workstation.svg
